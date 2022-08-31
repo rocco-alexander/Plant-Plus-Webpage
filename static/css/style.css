@@ -65,7 +65,7 @@
 
 /* Hero Section Styling */
 .hero-image{
-    background-image: url(./static/images/background.png);
+    background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:90% 90%;
