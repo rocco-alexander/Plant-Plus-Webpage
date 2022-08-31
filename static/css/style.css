@@ -131,15 +131,32 @@
     }
     .nav-links{
         padding: 0;
-        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
     }
     .nav-link{
         margin: 0;
-        margin-right: 1rem;
         margin-top: 1rem;
+    }
+    .nav-link:not(:last-child){
+        margin-right: .75rem;
+    }
+
+    .hero-text{
+        font-size: 2rem;
+        width: 80%;
+        margin-top: 30vh;
+        margin-left: 10%;
+    }
+    .contact-text{
+        font-size: 1.2rem;
     }
     .hi{
         display: none;
+    }
+    .hero-image{
+        background-position:50% 50% ;
     }
 }
 /* ABOUT US */
