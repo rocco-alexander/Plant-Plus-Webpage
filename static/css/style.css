@@ -2,10 +2,12 @@
 ::-webkit-scrollbar{
     display: none;
 }
-
 /* Removes Margin Everywhere */
 *{
     margin: 0;
+}
+*::selection{
+    background-color: #F3CD3C;
 }
 
 /* Top Navbar Styling */
@@ -49,6 +51,9 @@
 .hi{
     color: transparent;
     margin-right: 1rem;
+}.hi::selection{
+    background-color: #090909;
+    color:#fff;
 }
 .section{
     margin-top: 30vh;
@@ -88,7 +93,9 @@
 
 .section-header{
     font-family: sans-serif;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    /* font-size: clamp(1.2rem, 3rem, 3rem); */
+    font-size: clamp(2rem, -0.875rem + 8.333vw, 3rem);
     margin-bottom: 2rem;
 }
 
@@ -98,7 +105,11 @@
 }
 .headline-text{
     font-family: sans-serif;
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    /* font-size: clamp(1.5rem, 3rem, 3rem); */
+    /* font-size: clamp(3rem, 1vw, 1rem); */
+    /* font-size: clamp(0.5rem, 0.8rem + 0.5vw, 1.4rem); */
+    font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3rem);
     text-align: center;
 }
 .grid-image{
@@ -147,18 +158,16 @@
     .nav-link:not(:last-child){
         margin-right: .75rem;
     }
-
-    .hero-text{
-        font-size: 2rem;
-        width: 80%;
-        margin-top: 30vh;
-        margin-left: 10%;
-    }
-    .contact-text{
-        font-size: 1.2rem;
-    }
     .hi{
         display: none;
+    }
+
+    .hero-text{
+        text-align: center;
+        font-size: 1.7rem;
+        width: 80%;
+        margin-top: 25vh;
+        margin-left: 10%;
     }
     .hero-image{
         background-position:50% 50% ;
@@ -170,19 +179,10 @@
 .location{
     width: 100%;
 }
-
 .contact-text{
-    font-size: 2rem;
-    text-align: justify;
     margin-bottom: 1rem;
 }
+.contact-text a{
+    color: #090909;
 
-
-/* .breakout{
-    box-shadow: 0 0 0 100vmax #090909;
-    clip-path: inset(0 -100vmax);
 }
-.inverse{
-    background-color: #090909;
-    color: #fff;
-} */

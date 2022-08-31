@@ -5,3 +5,14 @@ window.onscroll = () =>{
     if(this.scrollY < height) nav.className = "navbar "
     else nav.className = 'navbar scroll';
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+    anchor.addEventListener("click", function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "nearest"
+        })
+    })
+})
