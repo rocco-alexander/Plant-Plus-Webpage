@@ -57,6 +57,11 @@
     flex-direction: column;
     align-items: center;
 }
+.icon{
+    height: 75px;
+    width: 75px;
+    margin-bottom: 2rem;
+}
 
 /* Hero Section Styling */
 .hero-image{
@@ -172,3 +177,12 @@
     margin-bottom: 1rem;
 }
 
+
+/* .breakout{
+    box-shadow: 0 0 0 100vmax #090909;
+    clip-path: inset(0 -100vmax);
+}
+.inverse{
+    background-color: #090909;
+    color: #fff;
+} */
