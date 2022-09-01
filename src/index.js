@@ -6,6 +6,8 @@ window.onscroll = () =>{
     else nav.className = 'navbar scroll';
 }
 
+// Scrolls the user to the section elements defined on the html file 
+// (ie 'equipment' take you to the )
 document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
     anchor.addEventListener("click", function(e){
         e.preventDefault();
