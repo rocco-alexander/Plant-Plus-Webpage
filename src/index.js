@@ -7,7 +7,7 @@ window.onscroll = () =>{
 }
 
 // Scrolls the user to the section elements defined on the html file 
-// (ie 'equipment' take you to the )
+// (ie 'equipment' take you to the section of id equipment)
 document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
     anchor.addEventListener("click", function(e){
         e.preventDefault();
